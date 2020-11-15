@@ -75,7 +75,7 @@ def predict_outcome(data):
     return prediction
 import pickle
 # Dumping the model object to save it as model.pkl file
-pickle.dump(model,open('mlp.pkl','wb+'))
+pickle.dump(mlp,open('model.pkl','wb+'))
 
 fights_db.to_csv('Cleansed_Data.csv')
 fighters_db.to_csv('UFC_Fighters_Database')
